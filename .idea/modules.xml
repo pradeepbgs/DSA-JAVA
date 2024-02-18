@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/DSA_JAVA.iml" filepath="$PROJECT_DIR$/.idea/DSA_JAVA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binary_search2D/binary_search2D.iml" filepath="$PROJECT_DIR$/binary_search2D/binary_search2D.iml" />
       <module fileurl="file://$PROJECT_DIR$/binary_search_interview_question/binary_search_interview_question.iml" filepath="$PROJECT_DIR$/binary_search_interview_question/binary_search_interview_question.iml" />
     </modules>
   </component>
