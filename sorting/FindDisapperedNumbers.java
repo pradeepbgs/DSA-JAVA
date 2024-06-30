@@ -1,17 +1,21 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class AllMissingNumber {
+/**
+ * FindDisapperedNumbers
+ */
+public class FindDisapperedNumbers {
+
     public static void main(String[] args) {
         int[] arr = {4,3,2,7,8,2,3,1};
-        System.out.println(FindAllMissingNumber(arr));
+        System.out.println(disappredNumbers(arr));
     }
 
-    static List<Integer> FindAllMissingNumber(int[]arr){
+    static List<Integer> disappredNumbers(int[] arr){
         cyclic(arr);
         List<Integer> missingNumbers = new ArrayList<>();
-        for (int i = 0; i < arr.length; i++) {
-            if(arr[i] != i+1){
+        for(int i =0; i < arr.length; i++){
+            if (arr[i] != i + 1){
                 missingNumbers.add(i+1);
             }
         }
@@ -27,10 +31,10 @@ public class AllMissingNumber {
             } else i++;
         }
     }
-    
-    static void swap(int[]arr, int first, int second){
-        int temp  = arr[first];
-        arr[first] = arr[second];
-        arr[second] = temp;
+
+    static void swap(int[] arr,int a , int b){
+        int temp = arr[a];
+        arr[a] = arr[b];
+        arr[b] = temp;
     }
 }
