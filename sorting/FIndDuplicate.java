@@ -11,7 +11,7 @@ public class FIndDuplicate {
                 return nums[i];
             }
         }
-        return nums.length+1;
+        return -1;
     }
 
     static void cyclic(int[] nums){
