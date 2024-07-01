@@ -11,13 +11,15 @@ public class FindAllDuplicates {
         cyclic(arr);
         List<Integer> duplicateNumbers = new ArrayList<>();
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] != i + 1 && !duplicateNumbers.contains(arr[i])) {
+            if (arr[i] != i + 1) {
+                // if (arr[i] != i + 1 && !duplicateNumbers.contains(arr[i]) ) 
+                // we can do like this also
                 duplicateNumbers.add(arr[i]);
             }
         }
         return duplicateNumbers;
     }
-
+  
     static void cyclic(int[] nums){
         int i =0;
         while(i<nums.length){
