@@ -17,6 +17,8 @@ public class MissingNumber {
         // search for missing number
 
         for (int index = 0; index < arr.length; index++) {
+            // this array is [0,n] thats why we are doing if (arr[index] != index) return index;
+            // if array asks [1,n] then by the logic it wll be if (arr[i] != i + 1) return i +1;
             if (arr[index] != index) {
                 return index;
             }

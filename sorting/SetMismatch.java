@@ -11,14 +11,12 @@ public class SetMismatch {
 
     static int[] findErrorNums(int[] arr) {
         cyclic(arr);
-        int[] newArray = {-1,-1};
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] != i + 1){
-                newArray[0] = arr[i];
-                newArray[1] = i+1;
+                return new int[] {arr[i], i+1};
             }
         }
-        return newArray;                             
+        return new int[] {-1,-1};
     }
 
     static void cyclic(int[] nums){
