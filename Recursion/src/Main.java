@@ -6,8 +6,9 @@ public class Main {
     public static void main(String[] args) {
         // print1(1);
         // print(10);
-        // int ans =  factorial(0);
-        System.out.println(fibonacci(10));
+        int ans =  factorial(5);
+        System.out.println(ans);
+        // fun(5);
     }
 
     static void print1(int n) {
@@ -26,11 +27,11 @@ public class Main {
     }
 
     static int factorial(int n){
-        if (n >= 1){
+        if (n >= 2){
             int ans =  n * factorial(n-1);
             return ans;
         } 
-        return -1;
+        return 1;
     }
 
     static int fibonacci(int n){
@@ -42,6 +43,15 @@ public class Main {
         // or we can do like this tooo.
         // if (n < 2){ return n}
         // return fibonacci(n-1) + fibonacci(n-2);
+    }
+
+
+    static void fun(int n){
+        if (n == 0) {
+            return ;
+        }
+         fun(n-1);
+        System.out.println(n);
     }
 
 }
