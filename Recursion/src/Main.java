@@ -7,7 +7,7 @@ public class Main {
         // print1(1);
         // print(10);
         // int ans =  factorial(0);
-        System.out.println(fibonacci(6));
+        System.out.println(fibonacci(10));
     }
 
     static void print1(int n) {
