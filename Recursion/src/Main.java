@@ -5,9 +5,9 @@ public class Main {
 
     public static void main(String[] args) {
         // print1(1);
-        print(10);
+        // print(10);
         // int ans =  factorial(5);
-        // System.out.println(ans);
+        System.out.println(sumOfNumber(5));
         // fun(5);
     }
 
@@ -53,5 +53,18 @@ public class Main {
          fun(n-1);
         System.out.println(n);
     }
+
+    static int sumOfNumber(int n){
+        if (n == 1) {
+            return n;
+        }
+        return n + sumOfNumber(n-1);
+    }
+
+
+
+
+    // Time Complexity: O(n)
+    // Space Complexity: O(n
 
 }
