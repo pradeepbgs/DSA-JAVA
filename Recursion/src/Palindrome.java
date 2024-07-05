@@ -1,19 +1,6 @@
-import java.util.Arrays;
-
-public class ReverseNumber {
+public class Palindrome {
     public static void main(String[] args) {
-        // reverse(1234);
-        System.out.println(rev2(4321));
-    }
-
-    static int sum = 0;
-    static void reverse(int n){
-        if (n == 0) {
-            return ;
-        }
-        int lastDigits = n % 10;
-        sum = sum * 10 + lastDigits;
-         reverse(n/10);
+        System.out.println(PalindromeNumber(1));
     }
 
     static int rev2(int num){
@@ -27,6 +14,9 @@ public class ReverseNumber {
         }
         int rem = num % 10;
         return rem * (int)(Math.pow(10, digits-1)) + helper(num/10, digits-1);
-    }
+    } 
 
+    static boolean PalindromeNumber(int n){
+        return n == rev2(n);
+    }
 }

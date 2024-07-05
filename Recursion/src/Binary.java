@@ -1,7 +1,7 @@
 public class Binary {
     public static void main(String[] args) {
-        int [] arr = {1,2,3,4,55,66,77,88,99,100,110,140,990,1000};
-        int target = 89;
+        int [] arr = {-1,0,5};
+        int target = -1;
         System.out.println(search(arr, target,0, arr.length-1));
     }
 

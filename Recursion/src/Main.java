@@ -5,9 +5,9 @@ public class Main {
 
     public static void main(String[] args) {
         // print1(1);
-        // print(10);
-        int ans =  factorial(5);
-        System.out.println(ans);
+        print(10);
+        // int ans =  factorial(5);
+        // System.out.println(ans);
         // fun(5);
     }
 
