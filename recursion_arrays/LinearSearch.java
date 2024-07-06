@@ -9,9 +9,9 @@ public class LinearSearch {
 
     public static void main(String[] args) {
         int[] arr = {1,2,3,4,4,5};
-        System.out.println(search(arr, 4, 0));
-        System.out.println(searchLast(arr, 4, arr.length-1));
-        FindAllIndex(arr, 4, 0);
+        // System.out.println(search(arr, 4, 0));
+        // System.out.println(searchLast(arr, 4, arr.length-1));
+        FindAllIndex(arr, 7, 0);
         System.out.println(list);
     }
    

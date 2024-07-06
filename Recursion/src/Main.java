@@ -7,7 +7,7 @@ public class Main {
         // print1(1);
         // print(10);
         // int ans =  factorial(5);
-        System.out.println(sumOfNumber(5));
+        System.out.println(sumOfNumber(0));
         // fun(5);
     }
 
@@ -55,7 +55,7 @@ public class Main {
     }
 
     static int sumOfNumber(int n){
-        if (n == 1) {
+        if (n <= 1) {
             return n;
         }
         return n + sumOfNumber(n-1);
