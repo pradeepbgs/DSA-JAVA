@@ -36,10 +36,10 @@ public class MergeSortedArray {
         //     k++;
         // }
 
-        while (i<m && nums1[i] > 0) {
+        while (i<m && nums1[i] != 0) {
             c[k++] = nums1[i++];
         } 
-        while (j<n && nums2[j] > 0) {
+        while (j<n && nums2[j] != 0) {
             c[k++] = nums2[j++];
         }
 
