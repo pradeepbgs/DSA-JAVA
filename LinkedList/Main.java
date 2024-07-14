@@ -10,7 +10,12 @@ public class Main {
         list.insertFirst(22);
         list.insertLast(999);
         list.insert(1000, 3);
-
+        list.display();
+        System.out.println(list.deleteFirst());
+        System.out.println(list.deleteLast());
+        System.out.println(list.delete(2));
+        list.display();
+        System.out.println(list.find(5));
         list.display();
     }
 }
