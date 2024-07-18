@@ -59,6 +59,20 @@ public class LL {
         size++;
     }
 
+    // insertion using recursion
+    public void insertRec(int index,int val){
+        if (index == 0) {
+            insertFirst(val);
+            return;
+        }
+        if (index == size) {
+            insertLast(val);
+            return;
+        }
+        Node temp = new Node(val);
+    }
+
+
     // delete a node
 
     public int deleteFirst(){
