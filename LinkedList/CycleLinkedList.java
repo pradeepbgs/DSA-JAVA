@@ -18,16 +18,43 @@ public class CycleLinkedList {
                 return false;
             }
             ListNode slow = head;
-            ListNode fast = head.next;
-    
-            while (slow != fast) {
-                if (fast == null || fast.next == null) {
-                    return false; // If fast reaches the end (null), no cycle exists
+            ListNode fast = head;
+            
+            while (fast != null && fast.next != null) {
+                slow = slow.next;
+                fast = fast.next.next;
+                if (slow == fast) {
+                    return true;
                 }
-                slow = slow.next; // Move slow pointer one step
-                fast = fast.next.next; // Move fast pointer two steps
             }
-            return true;
+            return false;
         }
+
+        // find length of the cycle 
+
+        public int lengthCycle(ListNode head) {
+            if(head == null){
+                return 0;
+            }
+            ListNode slow = head;
+            ListNode fast = head;
+            
+            while (fast != null && fast.next != null) {
+                slow = slow.next;
+                fast = fast.next.next;
+                if (slow == fast) {
+                    // calculate the length of cycle
+                    ListNode temp = slow;
+                    int length =0;
+                    do {
+                        temp = temp.next;
+                        length++;
+                    } while (slow != temp);
+                    return length;
+                }
+            }
+            return 0;
+        }
+
     }
 }
