@@ -98,8 +98,6 @@ public class MergeSort {
             k++;
         }
 
-        for (int k2 = 0; k2 < mix.length; k2++) {
-            arr[s+k2] = mix[k2];
-        }
+        System.arraycopy(mix, 0, arr, s, mix.length);
     }
 }
